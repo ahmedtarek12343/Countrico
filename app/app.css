@@ -1,0 +1,78 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans:
+    "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  transition: 0.5s all ease;
+  overflow-x: hidden;
+}
+
+@theme {
+  --color-bg: #f9fafb;
+  --color-text: #111827;
+  --color-surface: #ffffff;
+  --color-accent: #6b21a8;
+  --color-card: #ffffff; /* Card color in light mode */
+}
+
+html.dark {
+  --color-bg: #111827;
+  --color-text: #f9fafb;
+  --color-surface: #1f2937;
+  --color-accent: #6b21a8;
+  --color-card: #1f2937; /* Card color in dark mode */
+}
+
+.mySwiper .swiper-pagination-bullet {
+  background: #00000049 !important; /* inactive color */
+  width: 12px !important;
+  height: 12px !important;
+  opacity: 1 !important;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+  background: #000 !important; /* inactive color */
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+  background: #6b21a8 !important; /* active color */
+  width: 24px !important;
+  border-radius: 11rem !important;
+}
+
+.mySwiper .swiper-button-next,
+.mySwiper .swiper-button-prev {
+  color: #6b21a8 !important;
+  font-size: 2rem !important;
+}
+
+#country-name {
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+#card:hover #country-name {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+@keyframes spin {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
