@@ -22,20 +22,20 @@ export default function Home() {
         <h1 className="text-[clamp(2rem,5vw,5rem)] md:leading-20 font-semibold ">
           Explore countries with <br /> Real-Time Data
         </h1>
-        <p className="text-gray-500 font-medium text-3xl w-[80%] mt-10">
+        <p className="text-gray-500 font-medium text-[clamp(1.2rem,3vw,2rem)] w-[80%] mt-10">
           Discover details about every country around the world - from capitals
           to regions!
         </p>
         <div className="flex gap-10 items-center mt-20">
           <Link
             to="countries"
-            className="px-12 py-6 text-[clamp(1.2rem,3vw,2rem)] bg-purple-800 rounded-2xl text-white transition hover:bg-purple-900"
+            className="md:px-12 px-6 py-3 md:py-6 text-[clamp(1.2rem,3vw,2rem)] bg-purple-800 rounded-2xl text-white transition hover:bg-purple-900"
           >
             Get Started
           </Link>
           <Link
             to="about"
-            className="px-12 py-6 text-[clamp(1.2rem,3vw,2rem)] border border-purple-800 rounded-2xl text-purple-800 transition-all duration-200 hover:text-white hover:bg-accent"
+            className="md:px-12 px-6 py-3 md:py-6 text-[clamp(1.2rem,3vw,2rem)] border border-purple-800 rounded-2xl text-purple-800 transition-all duration-200 hover:text-white hover:bg-accent"
           >
             Learn More
           </Link>
