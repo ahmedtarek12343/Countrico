@@ -1,7 +1,7 @@
 import { useState } from "react";
 import type { Route } from "./+types";
 import type { country } from "~/types";
-import React, { Suspense, lazy } from "react";
+import  { Suspense, lazy } from "react";
 import { Await } from "react-router";
 
 const CountryCard = lazy(() => import("~/components/CountryCard"));

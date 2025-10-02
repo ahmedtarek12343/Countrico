@@ -1,4 +1,4 @@
-import React, { use, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { NavLink } from "react-router";
 import Theme from "./Theme";
 import { TiThMenuOutline } from "react-icons/ti";

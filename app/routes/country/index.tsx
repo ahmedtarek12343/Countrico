@@ -1,4 +1,3 @@
-import React from "react";
 import type { Route } from "./+types";
 import type { country } from "~/types";
 import { Link } from "react-router";
